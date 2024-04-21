@@ -26,6 +26,27 @@
 
 .logo{
   color:#87CEEB;
-  margin: 30px 0;
+  margin: 40px 0;
   font-size: 5rem;
 }
+
+.menu-bar{
+  display :flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight : 500;
+  
+}
+
+.ant-menu-item-selected{
+   background-color: #c5c2d7 !important; 
+
+
+
+  }
+
+  .header-icon{
+    background:#d2e3cB ;
+    padding: 8px;
+    border-radius: 4px;
+  }

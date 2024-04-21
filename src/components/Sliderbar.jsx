@@ -6,7 +6,6 @@ import {
    ProfileOutlined,
    LogoutOutlined,
    OrderedListOutlined,
-   CarryOutOutlined,
    SettingOutlined
  } from '@ant-design/icons';
 
@@ -28,29 +27,24 @@ const Sliderbar = () => {
         key:'1',
         icon : <UserOutlined />,
         label :"Dashboard",
-      },
+      }, 
       {
-        key:'2',
-        icon : <CarryOutOutlined />,
-        label :"my order",
-      },
-      {
-        key:'3',
-        icon : <OrderedListOutlined />,
-        label :"todo",
-      },
-      {
-      key:'4',
+      key:'2',
       icon : <ProfileOutlined />,
       label :"profile",
     },
+      {
+        key:'3',
+        icon : <OrderedListOutlined />,
+        label :"previous month",
+      },
     {
-      key:'5',
+      key:'4',
       icon : <SettingOutlined />,
       label :"setting",
     },
     {
-      key:'6',
+      key:'5',
       icon : <LogoutOutlined/>,
       label :"Logout",
     },
