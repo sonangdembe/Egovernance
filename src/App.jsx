@@ -1,9 +1,11 @@
 
 import React, { useState } from 'react'
-import { Button, Layout } from 'antd'
+import { Button, Layout,Flex } from 'antd'
 import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons' 
 import Sliderbar from './components/Sliderbar'
 import CustomerHeader from './components/Header';
+import MainContent from './components/MainContent';
+import SideContent from './components/SideContent';
 import './App.css';
 
 
@@ -28,10 +30,21 @@ const App = () => {
      </Sider>
    
     <Layout>
-      <Header className='header'></Header>
+
+      <Header className='header'>
       <CustomerHeader />
-      <Content className='content'></Content>
+        </Header> 
+
+      <Content className='content'>
+        <Flex gap='large'>
+        <MainContent className='header-icon'/>
+        <SideContent className='header-icon'/>
+      </Flex>
+      </Content>
+
+       
     </Layout>
+    
   </Layout>
    
   )

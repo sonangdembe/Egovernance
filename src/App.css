@@ -6,6 +6,10 @@
 .content{
   margin:24px 16px;
   padding: 20px;
+  display: 'flex'; 
+  justify-content: 'center';
+  align-items: 'center';
+   height: '100vh'
 }
 .triger-btn{
   font-size: 16px;
@@ -45,8 +49,48 @@
 
   }
 
+
+  /* header */
   .header-icon{
-    background:#d2e3cB ;
+    background:#252526 ;
     padding: 8px;
     border-radius: 4px;
+    font-size: 15px;
+    color: #c9c91e;
+    cursor: pointer;
+  }
+
+
+  /* button and color */
+  .ant-btn:hover{
+    color: #87CEEB !important;
+    border-color:black !important ;
+  }
+
+  .ant-btn-primary {
+    background-color: aqua !important;
+
+  }
+  .ant-btn-primary:hover{
+    background-color: black !important;
+    color: #fff;
+  }
+
+  .primary--color{
+    color: #4f6f52 !important;
+  }
+
+  .primary--light--color{
+    color :#4f6f52 !important;
+  }
+
+  .secondary--color{
+    color: #86a789 !important;
+  }
+
+  .light--color {
+    color: #d2e3c8 ! important;
+  }
+  .gray--color{
+    color: rgb(182,181,181) !important;
   }
