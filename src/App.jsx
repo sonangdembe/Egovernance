@@ -1,53 +1,38 @@
 
 import React, { useState } from 'react'
 import { Button, Layout,Flex } from 'antd'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons' 
 import Sliderbar from './components/Sliderbar'
 import CustomerHeader from './components/Header';
 import MainContent from './components/MainContent';
 import SideContent from './components/SideContent';
+import Banner from './components/Banner';
+import LayoutP from './LayoutP';
+import Payment from './components/Payment'
+
 import './App.css';
 
-
-const {Sider,Header, Content} = Layout
+// const {Sider,Header, Content} = Layout
 const App = () => {
-  const [collapsed,setCollapsed] = useState(false)
+
   return (
-  <Layout>
-    <Sider 
-    theme='light' 
-    trigger={null}
-    collapsed={collapsed} 
-    className='sider'>
-    <Sliderbar />
 
+<>
 
-      <Button type='text' 
-       icon={collapsed ? < MenuUnfoldOutlined/> : <MenuFoldOutlined/>} 
-       onClick={() => setCollapsed(!collapsed)}
-       className= "triger-btn"
-        />
-     </Sider>
-   
-    <Layout>
+<Router>
+        <Routes>
+          <Route path='/' element={<LayoutP />} />
+          <Route path='/payment' element={<Payment />} />
+            
+          
+        </Routes>
+      </Router>
 
-      <Header className='header'>
-      <CustomerHeader />
-        </Header> 
+</>
 
-      <Content className='content'>
-        <Flex gap='large'>
-        <MainContent className='header-icon'/>
-        <SideContent className='header-icon'/>
-      </Flex>
-      </Content>
-
-       
-    </Layout>
-    
-  </Layout>
-   
   )
-}
+};
 
 export default App

@@ -1,8 +1,9 @@
 
 
 import React from 'react';
-import { Card, Flex, Typography, Input, Button } from 'antd';
-import { Link } from 'react-router-dom';
+import { Card, Flex, Typography, Input,Button } from 'antd';
+import { Link, NavLink } from 'react-router-dom';
+
 
 
 const Banner = () => {
@@ -29,8 +30,9 @@ const Banner = () => {
         </Flex>
       </Flex>
       <Flex gap="large">
-    
-      <Button  size='Large'>Procees </Button>
+      {/* <Button>Proceed</Button> */}
+      <Link to='/payment'> < Button> Proceed </Button></Link>
+   
       </Flex>
     </Card>
   );
