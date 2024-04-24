@@ -9,7 +9,7 @@
   display: 'flex'; 
   justify-content: 'center';
   align-items: 'center';
-   height: '100vh'
+  height: '100vh';
 }
 .triger-btn{
   font-size: 16px;
@@ -18,7 +18,7 @@
   position: fixed;
   bottom: 10px;
   left: 10px;
-
+  
 }
 .sider{
   height: 100vh;
@@ -43,45 +43,46 @@
 }
 
 .ant-menu-item-selected{
-   background-color: #c5c2d7 !important; 
+  background-color: #c5c2d7 !important; 
+  
+  
+  
+}
 
 
-
-  }
-
-
-  /* header */
-  .header-icon{
-    background:#252526 ;
-    padding: 8px;
-    border-radius: 4px;
-    font-size: 15px;
-    color: #c9c91e;
-    cursor: pointer;
-  }
+/* header */
+.header-icon{
+  background:#252526 ;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #21b362;
+  cursor: pointer;
+}
 
 
-  /* button and color */
-  .ant-btn:hover{
-    color: #87CEEB !important;
-    border-color:black !important ;
-  }
+/* button and color */
+.ant-btn:hover{
+  color: hwb(256 2% 92%) !important;
+  background-color: #28c64f !important;
+  border-color:black !important ;
+}
 
-  .ant-btn-primary {
-    background-color: aqua !important;
+.ant-btn-primary {
+  background-color: aqua !important;
+  
+}
+.ant-btn-primary:hover{
+  background-color: black !important;
+  color: #28c64f;
+}
 
-  }
-  .ant-btn-primary:hover{
-    background-color: black !important;
-    color: #fff;
-  }
+.primary--color{
+  color: #4f6f52 !important;
+}
 
-  .primary--color{
-    color: #4f6f52 !important;
-  }
-
-  .primary--light--color{
-    color :#4f6f52 !important;
+.primary--light--color{
+  color :#4f6f52 !important;
   }
 
   .secondary--color{
@@ -94,3 +95,16 @@
   .gray--color{
     color: rgb(182,181,181) !important;
   }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
