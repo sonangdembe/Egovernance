@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { DatePicker, Input, Button, Typography, Space, Row, Col } from 'antd';
+import {Link} from 'react-router-dom';
+import Khalti from './khalti/Khalti';
 import '../App.css'; 
 
 const Payment = () => {
@@ -46,6 +48,7 @@ const Payment = () => {
   return (
     <div className="container">
       <div className="center">
+      <div className='content'> 
         <Typography.Title level={2}>Payment System</Typography.Title>
         <Row justify="center">
           <Col span={8}>
@@ -64,6 +67,10 @@ const Payment = () => {
             </Space>
           </Col>
         </Row>
+        {/* <Link to='/paymentProcess'> < Button style={{ marginTop: '0px' }}> Proceed </Button></Link> */}
+
+      <Khalti />
+        </div>
       </div>
     </div>
   );

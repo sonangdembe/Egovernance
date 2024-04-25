@@ -11,24 +11,25 @@ import SideContent from './components/SideContent';
 import Banner from './components/Banner';
 import LayoutP from './LayoutP';
 import Payment from './components/Payment'
-
+// import PaymentProcess from './components/PaymentProcess';
+import Khalti from './components/khalti/Khalti'
+import KhaltiKey from './components/khalti/KhaltiKey'
+import KhaltiConfig from './components/khalti/KhaltiConfig'
 import './App.css';
 
-// const {Sider,Header, Content} = Layout
 const App = () => {
-
   return (
+    <>
 
-<>
 
-<Router>
+    <Router>
         <Routes>
           <Route path='/' element={<LayoutP />} />
           <Route path='/payment' element={<Payment />} />
-            
-          
+           {/* <Route path='/paymentProcess' element={<PaymentProcess />} /> */}
+           
         </Routes>
-      </Router>
+    </Router>
 
 </>
 
