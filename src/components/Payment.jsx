@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DatePicker, Input, Button, Typography, Space, Row, Col } from 'antd';
 import {Link} from 'react-router-dom';
-import Khalti from './khalti/Khalti';
+// import PaymentKhalti from './components/khalti/PaymentKhalti';
 import '../App.css'; 
 
 const Payment = () => {
@@ -67,9 +67,8 @@ const Payment = () => {
             </Space>
           </Col>
         </Row>
-        {/* <Link to='/paymentProcess'> < Button style={{ marginTop: '0px' }}> Proceed </Button></Link> */}
+        <Link to='/paymentKhalti'> < Button style={{ marginTop: '0px' }}> Proceed </Button></Link>
 
-      <Khalti />
         </div>
       </div>
     </div>
