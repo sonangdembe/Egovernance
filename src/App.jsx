@@ -9,13 +9,16 @@ import CustomerHeader from './components/Header';
 import MainContent from './components/MainContent';
 import SideContent from './components/SideContent';
 import Banner from './components/Banner';
-import LayoutP from './LayoutP';
+import LayoutP from './components/LayoutP';
 import Payment from './components/Payment'
 import Khalti from './components/khalti/Khalti'
 import KhaltiKey from './components/khalti/KhaltiKey'
 import KhaltiConfig from './components/khalti/KhaltiConfig'
 import PaymentKhalti from './components/khalti/PaymentKhalti'
 import CancelPayment from './components/khalti/CancelPayment'
+import Home from './components/view/Home';
+import Login from './components/view/Login';
+import SignupForm from './components/view/Signup';
 import './App.css';
 
 const App = () => {
@@ -25,7 +28,10 @@ const App = () => {
 
     <Router>
         <Routes>
-          <Route path='/' element={<LayoutP />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<SignupForm />} />
+          <Route path='/dashboard' element={<LayoutP />} />
           <Route path='/payment' element={<Payment />} />
           
            <Route path='/paymentKhalti' element={<PaymentKhalti />} />

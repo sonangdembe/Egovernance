@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import { Button, Layout,Flex } from 'antd'
 
 import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons' 
-import Sliderbar from './components/Sliderbar'
-import CustomerHeader from './components/Header';
-import MainContent from './components/MainContent';
-import SideContent from './components/SideContent';
-import Banner from './components/Banner';
+import Sliderbar from './Sliderbar'
+import CustomerHeader from './Header';
+import MainContent from './MainContent';
+import SideContent from './SideContent';
+import Banner from './Banner';
 
 
 
